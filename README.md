@@ -1,4 +1,4 @@
-# 🛡️ AWS CSPM Auto-Remediation Bot
+🛡️ AWS CSPM Auto-Remediation Bot
 
 An event-driven AWS security automation pipeline that detects cloud misconfigurations, notifies security engineers through Slack, and enables **approved, one-click remediation** with an auditable trail.
 
