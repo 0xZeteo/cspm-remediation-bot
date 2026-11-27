@@ -20,7 +20,7 @@ def lambda_handler(event, context):
     resource = action['resource']
     bucket = resource.split(':')[-1]
 
-    if os.environ.get('DRY_RUN') == 'true':
+    if os.environ.get('DRY_RUN', '').lower() == 'true':
         result = f"DRY RUN: would block public access on {bucket}"
     else:
         s3.put_public_access_block(
